@@ -8,13 +8,43 @@
   
   
       <link rel="stylesheet" href="../lrcimth.github.io/style.css">
+<style>
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 13px;
+    font-size: 13px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
 
-  
-</head>
-
-<body>
-
-  
+</style>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -26,6 +56,19 @@
                 <h1 style="font-family: verdana; text-align: center; font font-size: 30px; color: darkblue">New Arrivals @ LRC</h1>
 			(Click on Book cover page to view the summary of the book)
 			</div> <!-- header -->
+	
+	<div class="dropdown" style="float:right;">
+		<button class="dropbtn">Archives</button>
+  		<div class="dropdown-content">
+    		<a href="https://https://lrcimt.libib.com/i/lrc-new-arrivals-july-2018">July, 2018</a>
+		<a href="https://lrcimt.libib.com/i/lrc-new-arrivals-may-2018">May, 2018</a>
+		<a href="https://lrcimt.libib.com/i/lrc-new-arrivals-april-2018">April, 2018</a>
+		<a href="https://lrcimt.libib.com/i/lrc-new-arrivals-march-2018">March, 2018</a>
+		<a href="https://lrcimt.libib.com/i/lrc-new-arrivals-february-2018">February, 2018</a>
+		<a href="https://lrcimt.libib.com/i/lrc-new-arrivals-january-2018">January, 2018</a>
+		<a href="https://lrcimt.libib.com/i/lrc-new-arrivals-dec-2017">December, 2017</a>
+ 	 </div>
+	</div>
   
     <div class="content">
         <ul class="library"></ul>

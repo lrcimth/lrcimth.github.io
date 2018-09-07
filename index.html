@@ -9,39 +9,55 @@
   
       <link rel="stylesheet" href="../lrcimth.github.io/style.css">
 <style>
-.dropbtn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 13px;
-    font-size: 13px;
-    border: none;
-    cursor: pointer;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
 }
-.dropdown {
-    position: relative;
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
     display: inline-block;
 }
+
 .dropdown-content {
     display: none;
     position: absolute;
-    right: 0;
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
+
 .dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    text-align: left;
 }
+
 .dropdown-content a:hover {background-color: #f1f1f1}
+
 .dropdown:hover .dropdown-content {
     display: block;
-}
-.dropdown:hover .dropbtn {
-    background-color: #3e8e41;
 }
 
 </style>
@@ -53,19 +69,21 @@
 </head>
 <body>
 	
-	<div class="dropdown" style="float:right;">
-		<button class="dropbtn">Archives</button>
-  		<div class="dropdown-content">
-    		<a href="https://lrcimt.libib.com/i/lrc-new-arrivals-july-2018">July, 2018</a>
+	<ul>
+    <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Archives</a>
+    <div class="dropdown-content">
+      <a href="https://lrcimt.libib.com/i/lrc-new-arrivals-july-2018">July, 2018</a>
 		<a href="https://lrcimt.libib.com/i/lrc-new-arrivals-may-2018">May, 2018</a>
 		<a href="https://lrcimt.libib.com/i/lrc-new-arrivals-april-2018">April, 2018</a>
 		<a href="https://lrcimt.libib.com/i/lrc-new-arrivals-march-2018">March, 2018</a>
 		<a href="https://lrcimt.libib.com/i/lrc-new-arrivals-february-2018">February, 2018</a>
 		<a href="https://lrcimt.libib.com/i/lrc-new-arrivals-january-2018">January, 2018</a>
 		<a href="https://lrcimt.libib.com/i/lrc-new-arrivals-dec-2017">December, 2017</a>
- 	 </div>
-	</div>
-	
+   	 </div>
+ 	 </li>
+	</ul>
+		
   <div data-role="header" id="header">
                 <h1 style="font-family: verdana; text-align: center; font font-size: 30px; color: darkblue">New Arrivals @ LRC</h1>
 			(Click on Book cover page to view the summary of the book)
